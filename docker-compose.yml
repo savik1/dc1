@@ -1,0 +1,22 @@
+version: "3"
+services:
+    maven:
+        buid:
+            context: maven/
+        volumes: 
+            - type: volume
+              source: data
+              target: /home/war
+    tomcat:
+        image: tomcat
+        volumes: 
+            - type: volume
+              source: data
+              target: /usr/local/tomcat/webapps
+        ports: 
+            - "8080:8080"
+        depends_on: 
+            - maven
+
+volumes: 
+    data:
