@@ -1,7 +1,7 @@
 version: "3"
 services:
     maven:
-        buid:
+        build:
             context: maven/
         volumes: 
             - type: volume
