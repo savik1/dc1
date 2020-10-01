@@ -1,4 +1,4 @@
-FROM maven:3.6.3-ubuntu
+FROM maven:ubuntu
 RUN apt-get update 
 RUN apt-get install -y git
 WORKDIR /home/sampleTest
