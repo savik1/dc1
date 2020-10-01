@@ -1,4 +1,4 @@
-rc2FROM maven
+FROM maven
 WORKDIR /home/sampleTest
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 WORKDIR /home/sampleTest/boxfuse-sample-java-war-hello
