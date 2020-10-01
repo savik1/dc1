@@ -1,4 +1,5 @@
 FROM maven:3.6.3
+RUN uname -a
 RUN apt-get update && apt-get install -y git
 WORKDIR /home/sampleTest
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
