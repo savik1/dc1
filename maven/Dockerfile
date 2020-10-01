@@ -1,5 +1,5 @@
 FROM maven
-RUN apt-get update && apt-get install -y git
+RUN apk add --update git
 WORKDIR /home/sampleTest
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 WORKDIR /home/sampleTest/boxfuse-sample-java-war-hello
